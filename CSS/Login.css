@@ -1,0 +1,140 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, a, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    margin: 0px;
+    color: #1b2028;
+    background-color: #bac2c4;
+}
+
+/*top-bar*/
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--top-bar-height);
+    background-color: #333b41;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100 200%;
+    z-index: 100;
+}
+.logo{
+    width: 60px; /* Largura da imagem */
+    height: auto; /* Manter a proporção */
+}
+.top-bar ul {
+    display: flex; /* Organiza os itens lado a lado */
+    list-style: none; /* Remove os marcadores */
+    gap: 30px; /* Espaçamento entre os itens */
+    margin: 0;
+    padding: 0;
+}
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.top-bar a:hover {
+    color: #ffa500; /* Cor no hover */
+}
+.content {
+    margin-top: var(--top-bar-height);
+    height: 100vh;
+}
+/* Centraliza a caixa de login na tela */
+.login-container {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 90vh; /* Altura total menos a barra superior */
+    background-color: #f4f4f4; /* Fundo claro */
+    padding: 20px;
+}
+
+/* Caixa de login */
+.login-box {
+    background-color: white; /* Fundo da caixa */
+    padding: 30px;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    width: 100%;
+    max-width: 400px; /* Largura máxima */
+    text-align: center;
+}
+
+/* Título do login */
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333b41;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Input e botões */
+.input-container {
+    margin-bottom: 15px;
+    text-align: left; /* Alinha os rótulos à esquerda */
+}
+
+.input-container label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333b41;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333b41;
+    box-sizing: border-box;
+}
+
+/* Botão de login */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #333b41;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #ffa500; /* Cor de destaque no hover */
+}
+
+/* Link para cadastro */
+.register-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #333b41;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.register-link a:hover {
+    color: #ffa500;
+}
