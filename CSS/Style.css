@@ -52,12 +52,11 @@ body {
 .top-bar a:hover {
     color: #ffa500;
 }
-
 .content {
     margin-top: 60px; /* Ajuste de acordo com a altura da top-bar */
     width: 100%;
+    margin-bottom: 0;
 }
-
 .container {
     align-items: center;
     text-align: justify;
